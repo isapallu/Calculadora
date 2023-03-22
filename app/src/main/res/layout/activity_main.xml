@@ -12,10 +12,11 @@
         android:layout_width="232dp"
         android:layout_height="39dp"
         android:layout_marginTop="112dp"
-        android:background="#5A2525"
+        android:background="#C49C9C"
         android:ems="10"
         android:hapticFeedbackEnabled="false"
         android:inputType="numberDecimal"
+        android:textColor="#390E0E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,15 +27,72 @@
         android:layout_width="232dp"
         android:layout_height="39dp"
         android:layout_marginBottom="508dp"
-        android:background="#5A2525"
+        android:background="#C39B9B"
         android:ems="10"
         android:hapticFeedbackEnabled="false"
         android:inputType="numberDecimal"
+        android:textColor="#390E0E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal"
         app:layout_constraintVertical_bias="0.064" />
+
+    <Button
+        android:id="@+id/soma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#C59D9D"
+        android:text="+"
+        android:textColor="#390E0E"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/n2" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:backgroundTint="#C59D9D"
+        android:text="%"
+        android:textColor="#390E0E"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soma"
+        app:layout_constraintVertical_bias="0.097" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#C59D9D"
+        android:text="-"
+        android:textColor="#390E0E"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toEndOf="@+id/soma"
+        app:layout_constraintTop_toBottomOf="@+id/n2" />
+
+    <Button
+        android:id="@+id/mult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C59D9D"
+        android:text="x"
+        android:textColor="#390E0E"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toEndOf="@+id/div"
+        app:layout_constraintTop_toBottomOf="@+id/sub"
+        app:layout_constraintVertical_bias="0.097" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
