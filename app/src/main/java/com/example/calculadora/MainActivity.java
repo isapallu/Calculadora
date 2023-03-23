@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     EditText n1;
     EditText n2;
-    TextView rc;
+    TextView resultadoConta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         n1 = findViewById(R.id.n1);
         n2 = findViewById(R.id.n2);
+        resultadoConta = findViewById(R.id.rc);
 
     }
     public void Soma(View v){
@@ -26,8 +27,28 @@ public class MainActivity extends AppCompatActivity {
         double v2 = Double.parseDouble(n2.getText().toString());
 
         double sm = v1 + v2;
+        resultadoConta.setText(sm + "");
+    }
+    public void Subtracao(View v){
+        double x1 = Double.parseDouble(n1.getText().toString());
+        double x2 = Double.parseDouble(n2.getText().toString());
 
+        double sub = x1 - x2;
+        resultadoConta.setText(sub + "");
+    }
+    public void Divisao(View v){
+        double f1 = Double.parseDouble(n1.getText().toString());
+        double f2 = Double.parseDouble(n2.getText().toString());
 
+        double div = f1%f2;
+        resultadoConta.setText(div + "");
+    }
+    public void Multiplicacao(View v){
+        double m1 = Double.parseDouble(n1.getText().toString());
+        double m2 = Double.parseDouble(n2.getText().toString());
+
+        double mult = m1*m2;
+        resultadoConta.setText(mult + "");
     }
 
 }
