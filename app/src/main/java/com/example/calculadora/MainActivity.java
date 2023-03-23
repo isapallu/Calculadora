@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         double f1 = Double.parseDouble(n1.getText().toString());
         double f2 = Double.parseDouble(n2.getText().toString());
 
-        double div = f1/f2;
+        double div = f1%f2;
         resultadoConta.setText(div + "");
     }
     public void Multiplicacao(View v){
