@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     public void Multiplicacao(View v){
         double m1 = Double.parseDouble(n1.getText().toString());
         double m2 = Double.parseDouble(n2.getText().toString());
-
+//
         double mult = m1*m2;
         resultadoConta.setText(mult + "");
     }
